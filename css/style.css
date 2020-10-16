@@ -415,11 +415,15 @@ nav{
 	width: 100%;
 	
 }
-.slika10 img{
+.club100image {
 	width: 70%;
 	height: 100%;
 	border-radius: 10px;
 	filter: drop-shadow(0px 7px 5px lightgray);
+	background-image: url('../imgs/clublive100.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 
