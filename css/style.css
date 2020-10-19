@@ -10,38 +10,52 @@ html, body{
 	height: 100%;
 	max-width: 100%;
 }
-
+body{
+	font-family: 'Roboto', sans-serif;
+}
 
 
 
 
 
 header{
+	height: 11vh;
+}
+.navBar{
 	display: flex;
-	height: 10vh;
+	flex-direction: row;
+	height: 100%;
+}
+.logoHolder, .navLinks{
+	display: flex;
 }
 
-.logo, .navLinks{
-	display: flex;
+.logoHolder{
+	flex:1;
+	margin-right: 200px;
+	margin-top: 6px;
 }
-
 .logo{
-	flex:1;
-	justify-content: center;
-	height: 8vh;
-	padding-top: 10px;
+	margin: auto;
+}
+.websiteLogo{
+	width: 100%;
 }
 
-nav{
+.nav{
 	flex:1;
+}
+.list{
+	align-items: flex-start;
 }
 .navLinks{
 	list-style: none;
 	margin-top: 30px;
+	align-items: flex-start;
 }
 .linkovi{
 	padding: 15px;
-	font-size: 1em;
+	font-family: Montserrat;
 	text-decoration: none;
 	color: #cfa15a;
 }
@@ -55,38 +69,61 @@ nav{
 	flex-wrap: wrap;
 	background-color: #f1eee5;
 	width: 100%;
-	margin: 0 auto;
-	height: 150vh;
-	align-items: center;
+	height: auto;
 	margin-bottom: 50px;
 }
-.slika1{
+.welcome{
+	display: flex;
+	flex-direction: row;
+	margin-top: 140px;
+	margin-bottom: 270px;
+}
+.imgWrap{
 	flex:1;	
-	margin-right: 20px;
-	margin-bottom: 75px;
-	height: 80vh;
+	text-align: right;
+	height: 71vh;
+	margin-left: 130px;
+}
+.slika1{
+	height: 100%;
 }
 .slika1 img{
 	height: 100%;
-	float: right;
 	filter: drop-shadow(0px 5px 3px black);
 }
-.welcome{
-	flex:1;
-	margin-bottom: 75px;
+
+.txtWrap{
+	flex: 1;
+	margin-top: 50px;
 }
+
 .text1{
-	width: 65%;
+	width: 90%;
+	padding: 15px;
+
 }
-.text1 h1{
-	font-size: 30px;
+.text1 h2{
+	font-weight:500;
+	font-size: 35px;
+	color: #383838;
+}
+.text1 h3{
+	font-weight:400;
+	font-size: 25px;
+}
+.text1 p{
+	font-weight:100;
 }
 .slicice{
 	margin-top: 50px;
 }
 .slicice img{
-	height: 7vh;
+	height: 7.4vh;
+	margin-left: 10px;
 }
+
+
+
 
 .drugaSekcija{
 	align-items: center;
@@ -97,8 +134,7 @@ nav{
 
 .slika2{
 	height: auto;
-	width: 100%;
-	/*flex: 1;*/
+	width: 90%;
 	margin: auto;
 }
 
@@ -116,7 +152,11 @@ nav{
 	margin-top: 50px;
 }
 .text2 h3{
-	font-size: 25px;
+	font-weight: 500;
+	font-size: 23px;
+}
+.text2 p{
+	font-weight: 100;
 }
 
 
@@ -131,13 +171,18 @@ nav{
 	flex:1;
 	margin: auto;
 }
+.samoNaslov h2{
+	font-weight: 400;
+	font-size: 35px;
+	color: #383838;
+}
 
 .cetvrtaSekcija{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	margin: 0 auto;
-	height: 100vh;
+	height: 90vh;
 	align-items: center;
 	margin-bottom: 50px;
 }
@@ -157,9 +202,13 @@ nav{
 	width: 65%;
 }
 .text3 h2{
-	font-size: 30px;
+	font-weight: 400;
+	font-size: 28px;
 }
 .text3 p{
+	font-weight: 100;
+}
+.text3 a{
 	font-style: italic;
 }
 .textLink{
@@ -194,13 +243,13 @@ nav{
 	background-color: #f1eee5;
 	margin: 0 auto;
 	height: auto;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 	align-items: center;
 }
 .slika4{
 	flex:1;
-	margin-top: 30px;
-	margin-bottom: 30px;
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 .slika4 img{
@@ -216,8 +265,17 @@ nav{
 	margin-top: 30px;
 }
 .text4{
-	width: 60%;
+	width: 63%;
 	float: right;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+.text4 h2{
+	font-weight: 400;
+	font-size: 28px;
+}
+.text4 p{
+	font-weight: 100;
 }
 
 .sestaSekcija{
@@ -227,7 +285,7 @@ nav{
 	margin: 0 auto;
 	height: auto;
 	align-items: center;
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 .slika5{
 	flex:1;	
@@ -242,8 +300,15 @@ nav{
 	flex:1;
 }
 .text5{
-	width: 65%;
+	width: 75%;
 	margin-top: 30px;
+}
+.text5 h2{
+	font-weight: 400;
+	font-size: 28px;
+}
+.text5 p{
+	font-weight: 100;
 }
 
 
@@ -260,7 +325,8 @@ nav{
 }
 .slika6{
 	flex:1;
-	margin-bottom: 30px;
+	margin-bottom: 100px;
+	margin-top: 100px;
 }
 
 .slika6 img{
@@ -275,11 +341,22 @@ nav{
 	margin-top: 30px;
 }
 .text6{
-	width: 60%;
+	width: 75%;
 	float: right;
+}
+.text6 h2{
+	font-weight: 400;
+	font-size: 28px;
+}
+.text6 p{
+	font-size: 15px;
+	color: #606060;
 }
 .text6 i{
 	margin-right: 10px;
+}
+.text6 p{
+	text-align: left;
 }
 
 
@@ -297,6 +374,8 @@ nav{
 .slika7{
 	flex:1;	
 	margin-right: 20px;
+	margin-top: 60px;
+	margin-bottom: 60px;
 }
 .slika7 img{
 	height: 70vh;
@@ -308,6 +387,13 @@ nav{
 }
 .text7{
 	width: 65%;
+}
+.text7 h2{
+	font-weight: 400;
+	font-size: 28px;
+}
+.text7 p{
+	font-weight: 100;
 }
 
 
@@ -326,6 +412,8 @@ nav{
 .slika8{
 	flex:1;
 	margin-bottom: 30px;
+	margin-top: 90px;
+	margin-bottom: 90px;
 }
 
 .slika8 img{
@@ -343,6 +431,20 @@ nav{
 	width: 60%;
 	float: right;
 }
+.beliP{
+	background-color: white;
+	color: #c4a15a;
+	width: 65%;
+	font-size: 15px;
+	font-weight: 500;
+}
+.text8 h2{
+	font-weight: 400;
+	font-size: 28px;
+}
+.text8 p{
+	font-weight: 100;
+}
 
 
 
@@ -358,9 +460,11 @@ nav{
 .slika9{
 	flex:1;	
 	margin-right: 20px;
+	margin-top: 90px;
+	margin-bottom: 90px;
 }
 .slika9 img{
-	height: 70vh;
+	height: 72vh;
 	float: right;
 	filter: drop-shadow(0px 5px 3px black);
 }
@@ -368,7 +472,14 @@ nav{
 	flex:1;
 }
 .text9{
-	width: 65%;
+	width: 50%;
+}
+.text9 h2{
+	font-weight: 400;
+	font-size: 28px;
+}
+.text9 p{
+	font-weight: 100;
 }
 
 .socialBtn i{
@@ -389,13 +500,17 @@ nav{
 	height: 18vh;
 	margin-bottom: 50px;
 }
+.samoNaslov h2{
+	font-weight: 400;
+	font-size: 28px;
+}
 
 .dvanaestaSekcija{
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
 	height: auto;
-	margin-bottom: 50px;
+	margin-bottom: 150px;
 }
 
 .tekst{
@@ -406,6 +521,10 @@ nav{
 	width: 65%;
 	margin: auto;
 	text-align: center;
+	font-weight: normal;
+}
+.text10 h3{
+	font-weight: 500;
 }
 .slika{
 	flex: 1;
@@ -413,17 +532,39 @@ nav{
 .slika10{
 	height: 100%;
 	width: 100%;
-	
 }
+
 .club100image {
-	width: 70%;
-	height: 100%;
+	width: 550px;
+	height: 230px;
 	border-radius: 10px;
 	filter: drop-shadow(0px 7px 5px lightgray);
 	background-image: url('../imgs/clublive100.png');
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-size: 100%;
+	align-items: flex-end;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: flex-end;
+}
+.club100image button{
+	background-color: #c4a15a;
+	color: white;
+	border-style: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	height: 45px;
+	width: 175px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+.club100image button:hover{
+	background-color: transparent;
+	color: #c4a15a;
+	transition: 1s;
 }
 
 
@@ -440,6 +581,10 @@ nav{
 	text-align: center;
 	width: 100%;
 }
+.naslov h3{
+	font-weight: 500;
+	font-size: 24px;
+}
 .linija{
 	width: 70%;
 	margin: auto;
@@ -450,6 +595,7 @@ nav{
 .cetrnaesta{
 	display: flex;
 	flex-wrap: wrap;
+	font-weight: 100;
 }
 
 .cetrnaesta i{
@@ -484,12 +630,17 @@ nav{
 	flex: 1;
 	text-align: center;
 	width: 100%;
+	font-weight: 200;
+	color: #383838;
+	font-size: 20px;
 }
 .naslov a{
 	text-decoration: none;
 }
 
-
+.petnaesta img{
+	height: 3.4em;
+}
 .sesnaesta{
 	width: 100%;
 	margin-bottom: 70px;
@@ -523,7 +674,8 @@ nav{
   width: 100%;
   outline: none;
   border: 1px solid #d5dbd9;
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: 100;
   padding: 8px 10px;
   border-radius: 3px;
 }
@@ -535,7 +687,7 @@ nav{
 .wrapper .form .inputPolje .btn{
   width: 100%;
   padding: 8px 10px;
-  font-size: 20px; 
+  font-size: 17px; 
   border: 0px;
   background:  #c4a15a;
   color: #fff;
@@ -579,18 +731,54 @@ footer{
 
 @media (max-width: 576px){
 
+	body{
+		width: 100%;
+	}
+
+	.logoHolder{
+		position: absolute;
+	}
+	.nav{
+		margin-left: 200px;
+		font-size: 13px;
+	}
+
+	.logoHolder a{
+		height: auto;
+		width: auto;
+	}
+	.logoHolder img{
+		height: 70px;
+		width: 200px;
+	}
+
+	.prvaSekcija{
+		width: 100%;
+	}
+	.welcome{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.text1{
 		margin: auto;
 		width: 80%;
 		font-size: 20px;
 	}
-	.slika1{
+	.imgWrap{
 		width: 100%;
+		margin: auto;
 	}
+
+
 	.text2{
 		margin: auto;
 		width: 80%;
 		font-size: 20px;
+	}
+
+	.cetvrtaSekcija{
+		margin-bottom: 100px;
 	}
 
 	.third{
@@ -662,6 +850,9 @@ footer{
 		text-align: center;
 		font-size: 20px;
 	}
+	.club100image{
+		width: 100%;
+	}
 
 	.cetrnaesta{
 		flex-direction: column;
@@ -670,35 +861,35 @@ footer{
 	.textBox1{
 		margin: auto;
 		width: 100%;
-		font-size: 20px;
 		text-align: center;
 		margin-bottom: 20px;
 	}
 	.textBox2{
 		margin: auto;
 		width: 100%;
-		font-size: 20px;
 		text-align: center;
 	}
 
 }
 
 @media (max-width: 768px){
-		.welcome{
-		text-align: center;
+
+		.prvaSekcija{
+		width: 100%;
+	}
+	.welcome{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
 	}
 	.text1{
 		margin: auto;
 		width: 80%;
 		font-size: 20px;
 	}
-	.slika1{
+	.imgWrap{
 		width: 100%;
-	}
-	.text2{
 		margin: auto;
-		width: 80%;
-		font-size: 20px;
 	}
 
 	.third{
