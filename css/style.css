@@ -31,12 +31,13 @@ header{
 }
 
 .logoHolder{
-	flex:1;
-	margin-right: 200px;
+	flex:2;
 	margin-top: 6px;
+	justify-content: center;
 }
 .logo{
-	margin: auto;
+	margin-right: 95px;
+	margin-top: 8px;
 }
 .websiteLogo{
 	width: 100%;
@@ -54,10 +55,21 @@ header{
 	align-items: flex-start;
 }
 .linkovi{
-	padding: 15px;
+	padding: 10px;
 	font-family: Montserrat;
+	font-size: 14px;
 	text-decoration: none;
 	color: #cfa15a;
+}
+.jezik{
+	flex:1;
+	margin-top: 30px;
+}
+.jezik select{
+	margin-left: 10px;
+	height: 25px;
+	width: 120px;
+	border: 1px solid #cfa15a;
 }
 
 
@@ -69,14 +81,15 @@ header{
 	flex-wrap: wrap;
 	background-color: #f1eee5;
 	width: 100%;
-	height: auto;
-	margin-bottom: 50px;
+	height: 1000px;
+	margin-bottom: 80px;
 }
 .welcome{
 	display: flex;
 	flex-direction: row;
 	margin-top: 140px;
-	margin-bottom: 270px;
+	margin-bottom: 5px;
+	height: 450px;
 }
 .imgWrap{
 	flex:1;	
@@ -94,13 +107,13 @@ header{
 
 .txtWrap{
 	flex: 1;
-	margin-top: 50px;
+	height: 71vh;
 }
 
 .text1{
+	margin-top: 50px;
 	width: 90%;
 	padding: 15px;
-
 }
 .text1 h2{
 	font-weight:500;
@@ -120,6 +133,48 @@ header{
 .slicice img{
 	height: 7.4vh;
 	margin-left: 10px;
+}
+
+.strelica{
+	width: 100%;
+}
+.strelicaWrap{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: black;
+	color: white;
+	margin: auto;
+	text-align: center;
+	
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.strelicaWrap i{
+	margin-top: 30%;
+	font-size: 25px;
+}
+.strelicaWrap a{
+	color: white;
 }
 
 
@@ -197,9 +252,11 @@ header{
 }
 .third{
 	flex:1;
+	height: 70vh;
 }
 .text3{
 	width: 65%;
+	margin-top: 25%;
 }
 .text3 h2{
 	font-weight: 400;
@@ -210,6 +267,7 @@ header{
 }
 .text3 a{
 	font-style: italic;
+	color: blue;
 }
 .textLink{
 	text-decoration: none;
@@ -221,20 +279,23 @@ header{
 	background-color: #c4a15a;
 	color: white;
 	border-style: none;
-	border-radius: 5px;
+	border-radius: 4px;
 	cursor: pointer;
 	font-size: 15px;
-	height: 45px;
-	width: 300px;
+	height: 43px;
+	width: 330px;
 }
 .dugme button:hover{
-	background-color:#3298db;
-	transition: 1.5s;
+	background-color:#a1844a;
+	transition: 1s;
 }
+
 .fab{
 	font-size: 18px;
 	margin-right: 10px;
 }
+
+
 
 .petaSekcija{
 	display: flex;
@@ -256,19 +317,19 @@ header{
 	max-height: 70vh;
 	height: auto;
 	float: left;
+	margin-left: 20px;
 	filter: drop-shadow(0px 5px 3px black);
 }
 
 .fourth{
 	flex:1;
-	margin-right: 80px;
-	margin-top: 30px;
+	height: 70vh;
 }
 .text4{
-	width: 63%;
+	width: 60%;
 	float: right;
-	margin-top: 80px;
-	margin-bottom: 80px;
+	margin-top: 20%;
+	margin-right: 10%;
 }
 .text4 h2{
 	font-weight: 400;
@@ -298,14 +359,15 @@ header{
 }
 .fifth{
 	flex:1;
+	height: 70vh;
 }
 .text5{
 	width: 75%;
-	margin-top: 30px;
+	margin-top: 20%;
 }
 .text5 h2{
 	font-weight: 400;
-	font-size: 28px;
+	font-size: 27px;
 }
 .text5 p{
 	font-weight: 100;
@@ -318,11 +380,11 @@ header{
 	flex-wrap: wrap;
 	width: 100%;
 	background-color: #f1eee5;
-	margin: 0 auto;
 	height: auto;
 	margin-bottom: 50px;
-	align-items: center;
+	/* align-items: center; */
 }
+
 .slika6{
 	flex:1;
 	margin-bottom: 100px;
@@ -337,27 +399,51 @@ header{
 
 .sixth{
 	flex:1;
-	margin-right: 80px;
-	margin-top: 30px;
+	height: auto;
+	/* margin-right: 80px;
+	margin-top: 30px; */
 }
-.text6{
-	width: 75%;
+.tekstWraper{
+	width: auto;
+	height: auto;
 	float: right;
+	display: flex;
+	flex-direction: row;
+	
+}
+.listaIkona{
+	margin-top: 42.5%;
+	margin-left: 80px;
+	font-size: 14px;
+}
+.listaIkona ul{
+	list-style: none;
+	margin-right: 7px;
+}
+
+.text6{
+	width: 70%;
+	margin-top: 30%;
+	float: right;
+	
 }
 .text6 h2{
 	font-weight: 400;
 	font-size: 28px;
 }
 .text6 p{
-	font-size: 15px;
+	font-size: 14px;
 	color: #606060;
 }
-.text6 i{
+.text6 ul{
+	list-style: none;
+}
+/* .text6 i{
 	margin-right: 10px;
 }
 .text6 p{
 	text-align: left;
-}
+} */
 
 
 
@@ -624,6 +710,13 @@ header{
 	display: flex;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	background-image: url(../imgs/wave.png);
+	background-size: 30%;
+    background-position: bottom;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-blend-mode: screen;
+	z-index: -1;
 }
 
 .naslov{
