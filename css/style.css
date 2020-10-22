@@ -696,15 +696,14 @@ header{
  
 .petnaesta{
 	display: flex;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-image: url(../imgs/wave.png);
-	background-size: 32%;
-    background-position: bottom;
-    background-position-x: center;
-	background-position-y: bottom;
+	background-size: 28%;
+    background-position: center;
 	background-color: rgba(255, 255, 255, 0.63);
-    background-blend-mode: screen;
+	background-blend-mode: screen;
+	background-repeat: repeat-x;
 }
 
 
